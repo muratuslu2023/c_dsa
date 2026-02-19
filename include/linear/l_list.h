@@ -9,7 +9,14 @@ typedef struct LinkedList{
     LinkedListNode *tail;
 } LinkedList;
 
-void init_l_list(LinkedList *l_list);
+LinkedList *init_l_list();
+void add_first(LinkedList *l_list, void *item);
+void add_last(LinkedList *l_list, void *item);
+
+void *get_first(LinkedList *l_list);
+void *get_last(LinkedList *l_list);
+
+void print_l_list(LinkedList *l_list);
 
 
 #endif
